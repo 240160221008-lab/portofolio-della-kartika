@@ -205,29 +205,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const data = projectData[id];
     if (!data) return;
 
-    modalTitle.textContent = data.title;
-    modalImg.src = data.img;
-    modalImg.alt = data.title;
-    modalImg.style.filter = data.filterColor;
-    modalDesc.textContent = data.desc;
+    if (modalTitle) modalTitle.textContent = data.title;
+    if (modalImg) {
+      modalImg.src = data.img;
+      modalImg.alt = data.title;
+      modalImg.style.filter = data.filterColor;
+    }
+    if (modalDesc) modalDesc.textContent = data.desc;
     
     // Clear & Populate tech tags
-    modalTechList.innerHTML = '';
-    data.tech.forEach(tech => {
-      const span = document.createElement('span');
-      span.className = 'project-tag';
-      span.textContent = tech;
-      modalTechList.appendChild(span);
-    });
+    if (modalTechList) {
+      modalTechList.innerHTML = '';
+      data.tech.forEach(tech => {
+        const span = document.createElement('span');
+        span.className = 'project-tag';
+        span.textContent = tech;
+        modalTechList.appendChild(span);
+      });
+    }
 
-    modalLink.href = data.link;
+    if (modalLink) modalLink.href = data.link;
 
-    modalOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Stop page scrolling
+    if (modalOverlay) {
+      modalOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Stop page scrolling
+    }
   };
 
   const closeModal = () => {
-    modalOverlay.classList.remove('active');
+    if (modalOverlay) modalOverlay.classList.remove('active');
     document.body.style.overflow = ''; // Resume scrolling
   };
 
@@ -239,14 +245,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  modalClose.addEventListener('click', closeModal);
-  modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) closeModal();
-  });
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (modalOverlay) {
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) closeModal();
+    });
+  }
 
   // Press ESC to close modal
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+    if (e.key === 'Escape' && modalOverlay && modalOverlay.classList.contains('active')) {
       closeModal();
     }
   });
@@ -256,44 +264,46 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   const successToast = document.getElementById('success-toast');
 
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  if (contactForm && successToast) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
 
-    const newMessage = {
-      name,
-      email,
-      subject,
-      message,
-      timestamp: new Date().toISOString()
-    };
+      const newMessage = {
+        name,
+        email,
+        subject,
+        message,
+        timestamp: new Date().toISOString()
+      };
 
-    // Retrieve existing messages or initialize empty array
-    let savedMessages = [];
-    try {
-      savedMessages = JSON.parse(localStorage.getItem('contact_messages')) || [];
-    } catch (err) {
-      savedMessages = [];
-    }
+      // Retrieve existing messages or initialize empty array
+      let savedMessages = [];
+      try {
+        savedMessages = JSON.parse(localStorage.getItem('contact_messages')) || [];
+      } catch (err) {
+        savedMessages = [];
+      }
 
-    savedMessages.push(newMessage);
-    localStorage.setItem('contact_messages', JSON.stringify(savedMessages));
+      savedMessages.push(newMessage);
+      localStorage.setItem('contact_messages', JSON.stringify(savedMessages));
 
-    // Reset Form fields
-    contactForm.reset();
+      // Reset Form fields
+      contactForm.reset();
 
-    // Show Success Toast Notification
-    successToast.classList.add('show');
-    
-    // Hide toast after 3.5 seconds
-    setTimeout(() => {
-      successToast.classList.remove('show');
-    }, 3500);
-  });
+      // Show Success Toast Notification
+      successToast.classList.add('show');
+      
+      // Hide toast after 3.5 seconds
+      setTimeout(() => {
+        successToast.classList.remove('show');
+      }, 3500);
+    });
+  }
 
   // --- 7. Scroll Spy (Dynamic Nav Highlighter) ---
   const sections = document.querySelectorAll('section[id]');
