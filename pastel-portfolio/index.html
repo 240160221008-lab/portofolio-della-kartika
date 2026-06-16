@@ -23,17 +23,17 @@
   <!-- Navigation Bar -->
   <header class="navbar" id="navbar">
     <div class="container">
-      <a href="index.html" class="logo">
+      <a href="#home" class="logo">
         della<span class="logo-dot"></span>
       </a>
       
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li class="nav-item"><a href="index.html" class="active">Beranda</a></li>
-          <li class="nav-item"><a href="about.html">Tentang</a></li>
-          <li class="nav-item"><a href="skill.html">Keahlian</a></li>
-          <li class="nav-item"><a href="project.html">Proyek</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-btn">Kontak</a></li>
+          <li class="nav-item"><a href="#home" class="active">Beranda</a></li>
+          <li class="nav-item"><a href="#about">Tentang</a></li>
+          <li class="nav-item"><a href="#skill">Keahlian</a></li>
+          <li class="nav-item"><a href="#project">Proyek</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-btn">Kontak</a></li>
         </ul>
       </nav>
       
@@ -56,8 +56,8 @@
           <h1 class="hero-title">Merancang pengalaman digital dengan sentuhan <span class="accent">keajaiban warna pastel</span>.</h1>
           <p class="hero-desc">Halo, saya Della Kartika. Saya adalah mahasiswi Universitas Sebelas April yang merancang dan membangun aplikasi web modern dengan memadukan tata letak pixel-perfect dan kode fungsional yang solid. Mari buat sesuatu yang luar biasa bersama!</p>
           <div class="hero-cta">
-            <a href="project.html" class="btn btn-primary">Lihat Karya Saya</a>
-            <a href="contact.html" class="btn btn-secondary">Hubungi Saya</a>
+            <a href="#project" class="btn btn-primary">Lihat Karya Saya</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
           </div>
         </div>
         
@@ -94,6 +94,388 @@
     </div>
   </section>
 
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" id="about-visual">
+          <div class="about-img-box">
+            <!-- Reuse avatar for secondary illustration, styled as Polaroid photo -->
+            <img src="assets/avatar_profile.png" alt="Della Kartika working" class="about-img">
+            <div class="about-badge">
+              <span class="num" style="font-size: 1.5rem; font-weight: 700;">UNSAP</span>
+              <span class="txt">Sebelas April</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-content" id="about-content">
+          <span class="section-tag">Tentang Saya</span>
+          <h2 class="about-subtitle">Mewujudkan ide menjadi kenyataan dengan desain dan kode</h2>
+          <p class="about-p">Saya adalah mahasiswi Universitas Sebelas April. Saya menjembatani kesenjangan antara desain visual kreatif dan implementasi front-end dengan kualitas terbaik. Filosofi saya berpusat pada kesederhanaan, kemudahan penggunaan, dan warna-warna pastel yang menyenangkan. Baik dalam membangun identitas merek yang konsisten maupun memprogram fitur dasbor yang kompleks, saya selalu memperhatikan detail animasi dan interaksi mikro agar website terasa responsif dan hidup.</p>
+          
+          <div class="about-details">
+            <div class="detail-item">
+              <div class="detail-check">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="detail-text">
+                <h4>Desain Interaksi</h4>
+                <p>Membuat transisi yang mulus</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <div class="detail-check">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="detail-text">
+                <h4>Arsitektur Frontend</h4>
+                <p>Komponen bersih & modular</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <div class="detail-check">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="detail-text">
+                <h4>Identitas Merek</h4>
+                <p>Gaya visual yang khas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skill" id="skill">
+    <div class="container">
+      <div class="section-header" id="skill-header">
+        <span class="section-tag">Keahlian Saya</span>
+        <h2 class="section-title">Bidang Keahlian</h2>
+        <p class="section-desc">Berikut adalah teknologi dan keterampilan kreatif yang saya gunakan sehari-hari untuk merancang proyek digital yang berkesan.</p>
+      </div>
+      
+      <div class="skill-grid">
+        <!-- Design & Creative -->
+        <div class="skill-column" id="skill-col-1">
+          <div class="skill-col-header">
+            <div class="skill-icon mint">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3d8f87" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path><path d="M12 6V12L16 14"></path></svg>
+            </div>
+            <h3>Kreatif & UI/UX</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Riset Pengguna & Wireframing</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar mint" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>UI Design (Figma)</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar mint" data-progress="95%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Logo & Branding</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar mint" data-progress="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Frontend Development -->
+        <div class="skill-column" id="skill-col-2">
+          <div class="skill-col-header">
+            <div class="skill-icon coral">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3>Pengembangan Web</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>HTML5 / CSS3 Semantik</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar coral" data-progress="95%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>JavaScript (ES6+) & DOM</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar coral" data-progress="88%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>React & Node.js</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar coral" data-progress="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tools & Standards -->
+        <div class="skill-column" id="skill-col-3">
+          <div class="skill-col-header">
+            <div class="skill-icon rose">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c46060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3>Alur Kerja & Alat</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Alur Kerja Git & GitHub</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar rose" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Desain Responsif & Mobile First</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar rose" data-progress="95%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Aksesibilitas (A11y) & SEO</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-bar rose" data-progress="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="project" id="project">
+    <div class="container">
+      <div class="section-header" id="project-header">
+        <span class="section-tag">Karya Saya</span>
+        <h2 class="section-title">Kreasi Terbaru</h2>
+        <p class="section-desc">Berikut adalah beberapa proyek pilihan yang menunjukkan keahlian teknis dan arah desain saya.</p>
+      </div>
+      
+      <!-- Project Filter Buttons -->
+      <ul class="project-filters" id="project-filters">
+        <li><button class="filter-btn active" data-filter="all">Semua</button></li>
+        <li><button class="filter-btn" data-filter="web">Aplikasi Web</button></li>
+        <li><button class="filter-btn" data-filter="design">Desain UI/UX</button></li>
+      </ul>
+      
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card" data-category="web" data-id="1">
+          <div class="project-img-container">
+            <img src="assets/project_caffeine.png" alt="Midnight Roast Order Dashboard" class="project-img">
+            <div class="project-overlay">
+              <div class="project-view-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Aplikasi Web</span>
+            <h3 class="project-card-title">Midnight Roast Manager</h3>
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Local Storage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="design" data-id="3">
+          <div class="project-img-container">
+            <img src="assets/project_blush.png" alt="Blush & Bloom App Mockup" class="project-img">
+            <div class="project-overlay">
+              <div class="project-view-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Desain UI/UX</span>
+            <h3 class="project-card-title">Blush & Bloom Marketplace</h3>
+            <div class="project-tags">
+              <span class="project-tag">Riset Pengguna</span>
+              <span class="project-tag">Figma Prototype</span>
+              <span class="project-tag">Visual Theme</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="web" data-id="4">
+          <div class="project-img-container">
+            <img src="assets/project_pickmie.png" alt="PickMie Mobile App Design" class="project-img">
+            <div class="project-overlay">
+              <div class="project-view-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Aplikasi Web</span>
+            <h3 class="project-card-title">PickMie Ordering Prototype</h3>
+            <div class="project-tags">
+              <span class="project-tag">Mobile App UX</span>
+              <span class="project-tag">Micro-interaction</span>
+              <span class="project-tag">Branding</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header" id="experience-header">
+        <span class="section-tag">Jalur Karir</span>
+        <h2 class="section-title">Riwayat Pengalaman</h2>
+        <p class="section-desc">Riwayat singkat perjalanan profesional dan kontribusi saya di berbagai bidang proyek.</p>
+      </div>
+      
+      <div class="timeline">
+        
+        <!-- Experience 1 -->
+        <div class="timeline-item timeline-item-left" id="timeline-item-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 - Sekarang</span>
+            <h3 class="timeline-title">Lead Frontend Developer</h3>
+            <h4 class="timeline-company">Caffeine & Co Labs</h4>
+            <p class="timeline-desc">Bertanggung jawab dalam merancang dashboard pesanan barista yang kompleks, mengimplementasikan manajemen status, mengintegrasikan penyimpanan lokal, dan mengoptimalkan kecepatan rendering.</p>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item timeline-item-right" id="timeline-item-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 - 2024</span>
+            <h3 class="timeline-title">Desainer UI/UX & Web</h3>
+            <h4 class="timeline-company">Agensi Digital Blush & Bloom</h4>
+            <p class="timeline-desc">Merancang antarmuka e-commerce di Figma dan mengembangkan halaman arahan interaktif menggunakan HTML/CSS vanilla.</p>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item timeline-item-left" id="timeline-item-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 - 2022</span>
+            <h3 class="timeline-title">Junior Web Developer</h3>
+            <h4 class="timeline-company">BPSK Sumedang Tech Group</h4>
+            <p class="timeline-desc">Memprogram dashboard admin backend, mengintegrasikan migrasi database SQLite, serta membangun alur pengaduan konsumen yang bersih.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" id="contact-info">
+          <span class="section-tag">Hubungi Saya</span>
+          <h2 class="contact-subtitle">Mari kita bangun sesuatu yang luar biasa bersama!</h2>
+          <p class="contact-p">Punya ide proyek, ingin berkolaborasi, atau sekadar menyapa? Isi formulir di samping, atau hubungi saya langsung lewat email. Saya akan sangat senang mendengar dari Anda!</p>
+          
+          <div class="contact-cards">
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-info-text">
+                <h4>Alamat Email</h4>
+                <p>hello@dellakartika.dev</p>
+              </div>
+            </div>
+            
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-info-text">
+                <h4>Lokasi</h4>
+                <p>Sumedang, Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container" id="contact-form-container">
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nama Anda</label>
+                <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Anda</label>
+                <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" class="form-control" placeholder="Kolaborasi proyek..." required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" class="form-control" placeholder="Ceritakan lebih banyak tentang tujuan proyek Anda..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer Section -->
   <footer>
     <div class="container">
@@ -120,6 +502,49 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal Project Detail Details -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+        <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-img-box">
+          <img src="" alt="" class="modal-img" id="modal-img">
+        </div>
+        <div class="modal-meta">
+          <div class="modal-info">
+            <h4>Deskripsi</h4>
+            <p id="modal-desc">Deskripsi proyek akan tampil di sini...</p>
+          </div>
+          <div class="modal-sidebar">
+            <div class="modal-sidebar-box">
+              <h5>Teknologi</h5>
+              <div class="modal-tech-list" id="modal-tech-list">
+                <!-- Tech tags injected dynamically -->
+              </div>
+              <a href="#" class="modal-link-btn" id="modal-link" target="_blank">Kunjungi Aplikasi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container">
+    <div class="toast" id="success-toast">
+      <div class="toast-icon">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="toast-content">
+        <h5>Pesan Terkirim!</h5>
+        <p>Terima kasih. Saya akan segera membalas pesan Anda.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Back to Top Button -->
   <button class="back-to-top" id="back-to-top" aria-label="Back to top">
