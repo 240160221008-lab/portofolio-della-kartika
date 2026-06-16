@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     1: {
       title: "Midnight Roast Manager",
       category: "Web App",
-      img: "assets/project_dashboard.png",
+      img: "assets/project_caffeine.png",
       filterColor: "none",
       desc: "Sebuah aplikasi dashboard barista interaktif untuk mengelola pesanan kedai kopi Midnight Roast. Sistem ini mendukung CRUD penuh (Create, Read, Update, Delete) untuk pesanan secara langsung, pembaruan status pengerjaan kopi secara dinamis, filter riwayat transaksi harian, serta visualisasi data penjualan sederhana. Semua data disimpan secara lokal dan aman di browser menggunakan Local Storage.",
       tech: ["Vanilla HTML5", "CSS Grid/Flexbox", "JavaScript ES6", "Local Storage API", "SVG Graphics"],
@@ -158,8 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
     2: {
       title: "Caffeine & Co Brand Identity",
       category: "Branding",
-      img: "assets/project_dashboard.png",
-      filterColor: "hue-rotate(120deg) saturate(0.85)",
+      img: "assets/project_caffeine.png",
+      filterColor: "none",
       desc: "Pengembangan panduan identitas visual yang lengkap untuk Caffeine & Co. Projek ini meliputi pembuatan desain logo minimalis berbentuk biji kopi dan cangkir yang estetik, perancangan kartu nama bertekstur, palet warna pastel hangat (cream, mint, rose), layout menu kafe, serta mockup kemasan produk ramah lingkungan.",
       tech: ["Figma Prototype", "Adobe Illustrator", "Brand Strategy", "Vector Layouts", "Color Matching"],
       link: "#"
@@ -167,8 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
     3: {
       title: "Blush & Bloom Marketplace",
       category: "UI/UX Design",
-      img: "assets/project_dashboard.png",
-      filterColor: "hue-rotate(240deg) saturate(0.8)",
+      img: "assets/project_blush.png",
+      filterColor: "none",
       desc: "Desain antarmuka aplikasi seluler untuk Blush & Bloom, sebuah marketplace kosmetik dan kecantikan berbasis personalisasi rekomendasi. Dilengkapi dengan kuis tipe kulit interaktif, halaman detail produk dengan rating terperinci, alur keranjang belanja minimalis, serta admin panel berdesain Pink Pastel Dashboard.",
       tech: ["Figma UI UX", "User Flow Maps", "Component Libraries", "Interactive Prototypes", "A/B Testing Mockups"],
       link: "#"
@@ -176,8 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
     4: {
       title: "PickMie Ordering Prototype",
       category: "UI/UX Design",
-      img: "assets/project_dashboard.png",
-      filterColor: "hue-rotate(60deg) saturate(1.2)",
+      img: "assets/project_pickmie.png",
+      filterColor: "none",
       desc: "Prototipisasi aplikasi pemesanan mie instan kustom bernama PickMie. Memuat splash screen animasi pembuka premium, menu kustomisasi bahan tambahan mie (topping, tingkat kepedasan, saus), sistem checkout instan yang mencatat metode pembayaran, serta riwayat pemesanan yang persisten secara lokal.",
       tech: ["Figma Design", "Mobile App UX", "Micro-interactions", "User Testing", "Visual Styling"],
       link: "#"
@@ -185,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
     5: {
       title: "BPSK Archiving System",
       category: "Web App",
-      img: "assets/project_dashboard.png",
-      filterColor: "saturate(0.4) brightness(1.1)",
+      img: "assets/project_caffeine.png",
+      filterColor: "none",
       desc: "Aplikasi pengarsipan dokumen digital untuk Badan Penyelesaian Sengketa Konsumen (BPSK) Sumedang. Projek ini mengimplementasikan web dashboard berkinerja tinggi yang memungkinkan petugas mengunggah dokumen persidangan, mengategorikan status berkas, mencari arsip dengan filter dinamis, dan menganalisis statistik pengaduan tahunan.",
       tech: ["HTML/CSS", "JavaScript", "Responsive Design", "Data Visualization", "Information Architecture"],
       link: "#"

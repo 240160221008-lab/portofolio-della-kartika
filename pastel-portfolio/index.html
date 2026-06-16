@@ -63,7 +63,7 @@
         
         <div class="hero-visual" id="hero-visual">
           <div class="avatar-wrapper">
-            <img src="assets/avatar.png" alt="Della Kartika Avatar" class="avatar-image">
+            <img src="assets/avatar_profile.png" alt="Della Kartika Avatar" class="avatar-image">
             <div class="avatar-border-decor"></div>
             
             <!-- Floating Card 1 -->
@@ -101,7 +101,7 @@
         <div class="about-visual" id="about-visual">
           <div class="about-img-box">
             <!-- Reuse avatar for secondary illustration, styled as Polaroid photo -->
-            <img src="assets/avatar.png" alt="Della Kartika working" class="about-img">
+            <img src="assets/avatar_profile.png" alt="Della Kartika working" class="about-img">
             <div class="about-badge">
               <span class="num" style="font-size: 1.5rem; font-weight: 700;">UNSAP</span>
               <span class="txt">Sebelas April</span>
@@ -298,17 +298,83 @@
       <div class="section-header" id="project-header">
         <span class="section-tag">Karya Saya</span>
         <h2 class="section-title">Kreasi Terbaru</h2>
-        <p class="section-desc">Berikut adalah daftar proyek pengembangan dan desain saya yang akan segera diperbarui di sini.</p>
+        <p class="section-desc">Berikut adalah beberapa proyek pilihan yang menunjukkan keahlian teknis dan arah desain saya.</p>
       </div>
       
-      <!-- Projects Empty State -->
-      <div class="projects-empty" id="projects-empty">
-        <div class="empty-icon">✨</div>
-        <h3>Belum Ada Proyek</h3>
-        <p>Saat ini saya sedang mempersiapkan karya-karya terbaik saya untuk ditampilkan di sini. Silakan hubungi saya untuk detail portofolio lainnya!</p>
+      <!-- Project Filter Buttons -->
+      <ul class="project-filters" id="project-filters">
+        <li><button class="filter-btn active" data-filter="all">Semua</button></li>
+        <li><button class="filter-btn" data-filter="web">Aplikasi Web</button></li>
+        <li><button class="filter-btn" data-filter="design">Desain UI/UX</button></li>
+      </ul>
+      
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card" data-category="web" data-id="1">
+          <div class="project-img-container">
+            <img src="assets/project_caffeine.png" alt="Midnight Roast Order Dashboard" class="project-img">
+            <div class="project-overlay">
+              <div class="project-view-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Aplikasi Web</span>
+            <h3 class="project-card-title">Midnight Roast Manager</h3>
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Local Storage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="design" data-id="3">
+          <div class="project-img-container">
+            <img src="assets/project_blush.png" alt="Blush & Bloom App Mockup" class="project-img">
+            <div class="project-overlay">
+              <div class="project-view-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Desain UI/UX</span>
+            <h3 class="project-card-title">Blush & Bloom Marketplace</h3>
+            <div class="project-tags">
+              <span class="project-tag">Riset Pengguna</span>
+              <span class="project-tag">Figma Prototype</span>
+              <span class="project-tag">Visual Theme</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="web" data-id="4">
+          <div class="project-img-container">
+            <img src="assets/project_pickmie.png" alt="PickMie Mobile App Design" class="project-img">
+            <div class="project-overlay">
+              <div class="project-view-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Aplikasi Web</span>
+            <h3 class="project-card-title">PickMie Ordering Prototype</h3>
+            <div class="project-tags">
+              <span class="project-tag">Mobile App UX</span>
+              <span class="project-tag">Micro-interaction</span>
+              <span class="project-tag">Branding</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </section>
     </div>
   </section>
 
