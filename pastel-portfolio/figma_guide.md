@@ -27,26 +27,15 @@ Kedua berkas SVG ini telah distrukturkan secara terperinci menggunakan tag grup 
 
 ## Opsi 2: Menggunakan Plugin Figma "html.to.design" (Situs Live ke Figma)
 
-Jika Anda ingin mengonversi kode HTML/CSS dari website portofolio yang sedang berjalan langsung menjadi komponen Figma yang siap pakai, Anda dapat menggunakan plugin Figma pihak ketiga.
+Karena website portofolio Anda sudah dideploy secara online, Anda dapat langsung mengonversi halaman web tersebut menjadi komponen Figma yang siap pakai dan dapat diedit sepenuhnya tanpa perlu menjalankan server lokal atau tunneling.
 
 ### Langkah-langkah:
-1. **Jalankan web server lokal**:
-   Buka terminal di folder proyek Anda dan jalankan perintah:
-   ```bash
-   npx http-server -p 8000
-   ```
-2. **Gunakan Tunneling (Opsional tetapi Direkomendasikan)**:
-   Karena Figma berjalan di cloud, Figma tidak dapat mengakses `http://localhost:8000` secara langsung tanpa ekstensi chrome khusus. Agar lebih mudah, Anda bisa menggunakan layanan tunnel gratis seperti **ngrok** atau **localtunnel** untuk membuat link publik sementara:
-   ```bash
-   npx localtunnel --port 8000
-   ```
-   *Salin tautan publik yang dihasilkan (misal: `https://cool-portfolio.localtunnel.me`).*
-
-3. **Impor di Figma**:
-   - Di Figma, buka menu **Plugins** > cari **"html.to.design"**.
-   - Masukkan tautan publik dari localtunnel (atau jalankan ekstensi Chrome pembantu dari html.to.design untuk localhost).
-   - Klik **Import**.
-   - Plugin akan memuat seluruh struktur HTML & CSS Anda dan mengubahnya menjadi frame Figma lengkap dengan properti auto-layout yang responsif!
+1. Di Figma, buka menu **Plugins** > cari dan jalankan plugin **"html.to.design"**.
+2. Masukkan satu-satunya tautan (URL) langsung dari website Anda yang telah dideploy:
+   `https://portofolio-della-kartika.vercel.app/`
+3. Pilih ukuran viewport yang diinginkan (misalnya: Desktop dan Mobile).
+4. Klik **Import**.
+5. Plugin akan memuat seluruh struktur HTML & CSS Anda langsung dari link live tersebut dan mengubahnya menjadi frame Figma lengkap dengan properti Auto Layout yang responsif dan siap diedit!
 
 ---
 

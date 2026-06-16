@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('skill-col-2'),
     document.getElementById('skill-col-3'),
     document.getElementById('project-header'),
-    document.getElementById('project-filters'),
     document.getElementById('experience-header'),
     document.getElementById('timeline-item-1'),
     document.getElementById('timeline-item-2'),
