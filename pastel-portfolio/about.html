@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Della Kartika | Beranda</title>
-  <meta name="description" content="Portfolio Della Kartika - UI/UX Designer & Frontend Developer. Kumpulan karya kreatif desain web dan aplikasi dengan estetika pastel yang premium.">
+  <title>Della Kartika | Tentang Saya</title>
+  <meta name="description" content="Tentang Della Kartika - UI/UX Designer & Frontend Developer. Mahasiswi Universitas Sebelas April di Sumedang, Indonesia.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/avatar_profile.png">
@@ -29,8 +29,8 @@
       
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li class="nav-item"><a href="index.html" class="active">Beranda</a></li>
-          <li class="nav-item"><a href="about.html">Tentang</a></li>
+          <li class="nav-item"><a href="index.html">Beranda</a></li>
+          <li class="nav-item"><a href="about.html" class="active">Tentang</a></li>
           <li class="nav-item"><a href="skill.html">Keahlian</a></li>
           <li class="nav-item"><a href="project.html">Proyek</a></li>
           <li class="nav-item"><a href="cv.html">CV Saya</a></li>
@@ -48,47 +48,56 @@
     </div>
   </header>
 
-  <!-- Hero Section (Home Screen) -->
-  <section class="hero" id="home" style="min-height: 100vh; display: flex; align-items: center;">
+  <!-- About Section (Explore Screen) -->
+  <section class="about" id="about" style="min-height: 100vh; display: flex; align-items: center; padding-top: 10rem; padding-bottom: 8rem;">
     <div class="container">
-      <div class="hero-grid">
-        <div class="hero-text" id="hero-text">
-          <span class="hero-tag">✨ Desainer UI/UX & Developer</span>
-          <h1 class="hero-title">Merancang pengalaman digital dengan sentuhan <span class="accent">keajaiban warna pastel</span>.</h1>
-          <p class="hero-desc">Halo, saya Della Kartika. Saya adalah mahasiswi Universitas Sebelas April yang merancang dan membangun aplikasi web modern dengan memadukan tata letak pixel-perfect dan kode fungsional yang solid. Mari buat sesuatu yang luar biasa bersama!</p>
-          <div class="hero-cta">
-            <a href="project.html" class="btn btn-primary">Lihat Karya Saya</a>
-            <a href="contact.html" class="btn btn-secondary">Hubungi Saya</a>
+      <div class="about-grid">
+        <div class="about-visual" id="about-visual">
+          <div class="about-img-box">
+            <!-- Reuse avatar for secondary illustration, styled as Polaroid photo -->
+            <img src="assets/avatar_profile.png" alt="Della Kartika working" class="about-img">
+            <div class="about-badge">
+              <span class="num" style="font-size: 1.5rem; font-weight: 700;">UNSAP</span>
+              <span class="txt">Sebelas April</span>
+            </div>
           </div>
         </div>
         
-        <div class="hero-visual" id="hero-visual">
-          <div class="avatar-wrapper">
-            <img src="assets/avatar_profile.png" alt="Della Kartika Avatar" class="avatar-image">
-            <div class="avatar-border-decor"></div>
-            
-            <!-- Floating Card 1 -->
-            <div class="floating-card card-top-left">
-              <div class="card-icon icon-mint">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        <div class="about-content" id="about-content">
+          <span class="section-tag">Tentang Saya</span>
+          <h2 class="about-subtitle">Mewujudkan ide menjadi kenyataan dengan desain dan kode</h2>
+          <p class="about-p">Saya adalah mahasiswi Universitas Sebelas April. Saya menjembatani kesenjangan antara desain visual kreatif dan implementasi front-end dengan kualitas terbaik. Filosofi saya berpusat pada kesederhanaan, kemudahan penggunaan, dan warna-warna pastel yang menyenangkan. Baik dalam membangun identitas merek yang konsisten maupun memprogram fitur dasbor yang kompleks, saya selalu memperhatikan detail animasi dan interaksi mikro agar website terasa responsif dan hidup.</p>
+          
+          <div class="about-details">
+            <div class="detail-item">
+              <div class="detail-check">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </div>
-              <div class="card-info">
-                <h5>Desain UI/UX</h5>
-                <p>Bersih & Fungsional</p>
-              </div>
-            </div>
-            
-            <!-- Floating Card 2 -->
-            <div class="floating-card card-bottom-right">
-              <div class="card-icon icon-coral">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-              </div>
-              <div class="card-info">
-                <h5>Web Dev</h5>
-                <p>Cepat & Interaktif</p>
+              <div class="detail-text">
+                <h4>Desain Interaksi</h4>
+                <p>Membuat transisi yang mulus</p>
               </div>
             </div>
             
+            <div class="detail-item">
+              <div class="detail-check">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="detail-text">
+                <h4>Arsitektur Frontend</h4>
+                <p>Komponen bersih & modular</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <div class="detail-check">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="detail-text">
+                <h4>Identitas Merek</h4>
+                <p>Gaya visual yang khas</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
