@@ -1,0 +1,134 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA4A4" />
+      <stop offset="100%" stop-color="#FFBDBD" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow-modal" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#2F363F" flood-opacity="0.15" />
+    </filter>
+    
+    <!-- Styles -->
+    <style>
+      .text-title { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 800; fill: #2F363F; }
+      .text-body { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 400; fill: #6B7580; }
+      .text-btn { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 600; font-size: 15px; }
+      .text-heading { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 700; fill: #2F363F; }
+    </style>
+  </defs>
+
+  <!-- ==================== BACKGROUND PAGE (MOCK) ==================== -->
+  <!-- Dimmed Underlay of the entire portfolio page -->
+  <rect width="1440" height="900" fill="#FCF9EA" />
+  
+  <!-- Blurred Blobs from underlying page -->
+  <circle cx="1300" cy="200" r="350" fill="#BADFDB" opacity="0.4" filter="blur(120px)" />
+  <circle cx="150" cy="800" r="400" fill="#FFBDBD" opacity="0.4" filter="blur(120px)" />
+
+  <!-- Underlying Page Elements (Dimmed) -->
+  <g id="Underlying-Navbar" opacity="0.3">
+    <rect width="1440" height="90" fill="#FCF9EA" />
+    <g transform="translate(120, 32)">
+      <text class="text-title" font-size="24">della</text>
+      <circle cx="62" cy="-8" r="5" fill="#FFA4A4" />
+    </g>
+  </g>
+  <g id="Underlying-Hero" opacity="0.3" transform="translate(120, 180)">
+    <g transform="translate(0, 80)">
+      <text class="text-title" font-size="60" y="0">Crafting digital</text>
+      <text class="text-title" font-size="60" y="75">experiences with a</text>
+      <text class="text-title" font-size="60" y="150">touch of pastel magic.</text>
+    </g>
+  </g>
+
+  <!-- Dark Modal Overlay (Dimming Background) -->
+  <rect width="1440" height="900" fill="#2F363F" fill-opacity="0.4" />
+
+  <!-- ==================== MODAL DIALOG CONTAINER ==================== -->
+  <g id="Modal-Container" transform="translate(320, 100)" filter="url(#shadow-modal)">
+    <!-- Modal Card Background -->
+    <rect width="800" height="700" rx="28" fill="#FFFFFF" />
+
+    <!-- Modal Header -->
+    <g id="Modal-Header" transform="translate(40, 48)">
+      <text class="text-title" font-size="28" y="10">Midnight Roast Manager</text>
+      
+      <!-- Close Button -->
+      <g id="Close-Button" transform="translate(690, -15)">
+        <circle cx="15" cy="15" r="18" fill="#FCF9EA" />
+        <path d="M 9 9 L 21 21 M 21 9 L 9 21" stroke="#2F363F" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+    </g>
+
+    <!-- Modal Body Content -->
+    <g id="Modal-Body" transform="translate(40, 110)">
+      <!-- Project Mockup Image Showcase -->
+      <g id="Showcase-Image">
+        <rect width="720" height="280" rx="20" fill="#FFF0F0" />
+        <!-- Simplified dashboard interface visual representation -->
+        <rect x="30" y="30" width="660" height="220" rx="12" fill="#FFFFFF" />
+        <!-- Top bar of mock app -->
+        <rect x="30" y="30" width="660" height="40" rx="12" fill="#BADFDB" fill-opacity="0.3" />
+        <circle cx="55" cy="50" r="6" fill="#FFA4A4" />
+        <circle cx="75" cy="50" r="6" fill="#FFBDBD" />
+        <circle cx="95" cy="50" r="6" fill="#BADFDB" />
+        <!-- Dashboard widgets layout representation -->
+        <rect x="60" y="90" width="180" height="130" rx="8" fill="#FCF9EA" />
+        <rect x="260" y="90" width="400" height="130" rx="8" fill="#FFF2F2" />
+        <path d="M 280 190 Q 340 120 400 170 T 620 120" stroke="#FFA4A4" stroke-width="4" fill="none" />
+      </g>
+
+      <!-- Meta Info Grid -->
+      <g id="Meta-Info" transform="translate(0, 320)">
+        <!-- Description (Left Column) -->
+        <g id="Description-Col">
+          <text class="text-heading" font-size="18" y="15">Description</text>
+          
+          <text class="text-body" font-size="14" y="45" width="440">
+            <tspan x="0" dy="0">A comprehensive barista order management dashboard designed</tspan>
+            <tspan x="0" dy="24">specifically for Midnight Roast coffee shops. This application features</tspan>
+            <tspan x="0" dy="24">a full CRUD system allowing manual creation, modification, and</tspan>
+            <tspan x="0" dy="24">deletion of orders. It also integrates real-time status tracking</tspan>
+            <tspan x="0" dy="24">and data persistence via local storage.</tspan>
+          </text>
+        </g>
+
+        <!-- Sidebar / Action panel (Right Column) -->
+        <g id="Sidebar-Col" transform="translate(480, 0)">
+          <!-- Technologies box -->
+          <g id="Technologies">
+            <text class="text-heading" font-size="16" y="15">Technologies</text>
+            
+            <!-- Tags Grid -->
+            <g id="Tech-Tags" transform="translate(0, 30)">
+              <!-- Tag 1 -->
+              <g id="Tag-1">
+                <rect width="90" height="28" rx="8" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+                <text class="text-body" font-size="12" x="14" y="18">HTML5/CSS3</text>
+              </g>
+              <!-- Tag 2 -->
+              <g id="Tag-2" transform="translate(100, 0)">
+                <rect width="90" height="28" rx="8" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+                <text class="text-body" font-size="12" x="14" y="18">JavaScript</text>
+              </g>
+              <!-- Tag 3 -->
+              <g id="Tag-3" transform="translate(0, 38)">
+                <rect width="105" height="28" rx="8" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+                <text class="text-body" font-size="12" x="14" y="18">Local Storage</text>
+              </g>
+            </g>
+          </g>
+
+          <!-- Launch Button CTA -->
+          <g id="CTA-Launch" transform="translate(0, 130)">
+            <rect width="240" height="48" rx="14" fill="#BADFDB" />
+            <text class="text-btn" x="120" y="28" fill="#2F363F" text-anchor="middle">Launch Web App</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

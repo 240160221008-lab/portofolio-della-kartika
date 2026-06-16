@@ -1,0 +1,488 @@
+<svg width="1440" height="3800" viewBox="0 0 1440 3800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Color Palettes -->
+    <solidColor id="color-cream" flow-color="#FCF9EA" />
+    <solidColor id="color-mint" flow-color="#BADFDB" />
+    <solidColor id="color-coral" flow-color="#FFA4A4" />
+    <solidColor id="color-rose" flow-color="#FFBDBD" />
+    
+    <!-- Gradients -->
+    <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA4A4" />
+      <stop offset="100%" stop-color="#FFBDBD" />
+    </linearGradient>
+    
+    <linearGradient id="grad-mint-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BADFDB" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#BADFDB" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#2F363F" flood-opacity="0.06" />
+    </filter>
+    <filter id="shadow-lg" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#2F363F" flood-opacity="0.1" />
+    </filter>
+    
+    <!-- Styles -->
+    <style>
+      .text-title { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 800; fill: #2F363F; }
+      .text-body { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 400; fill: #6B7580; }
+      .text-serif { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; }
+      .text-btn { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 600; font-size: 16px; }
+      .text-nav { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 500; font-size: 16px; fill: #2F363F; }
+      .badge-text { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 600; font-size: 14px; fill: #2F363F; }
+      .form-label { font-family: 'Outfit', 'Inter', sans-serif; font-weight: 600; font-size: 14px; fill: #2F363F; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1440" height="3800" fill="#FCF9EA" />
+
+  <!-- Background Decorative Blobs -->
+  <g id="Background-Blobs" opacity="0.6">
+    <circle cx="1300" cy="200" r="350" fill="#BADFDB" filter="blur(120px)" />
+    <circle cx="150" cy="1200" r="400" fill="#FFBDBD" filter="blur(120px)" />
+    <circle cx="1250" cy="2200" r="350" fill="#FFA4A4" filter="blur(120px)" />
+    <circle cx="200" cy="3100" r="400" fill="#BADFDB" filter="blur(120px)" />
+  </g>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <g id="Navigation-Bar">
+    <rect width="1440" height="90" fill="#FCF9EA" fill-opacity="0.95" />
+    <line x1="0" y1="90" x2="1440" y2="90" stroke="#FFBDBD" stroke-opacity="0.2" />
+    
+    <g id="Logo" transform="translate(120, 32)">
+      <text class="text-title" font-size="24">della</text>
+      <circle cx="62" cy="-8" r="5" fill="#FFA4A4" />
+    </g>
+
+    <g id="Nav-Items" transform="translate(680, 35)">
+      <text class="text-nav" x="0">Home</text>
+      <text class="text-nav" x="85">About</text>
+      <text class="text-nav" x="165">Skills</text>
+      <text class="text-nav" x="245">Work</text>
+      <text class="text-nav" x="325">Experience</text>
+      
+      <!-- Contact Button -->
+      <g id="Contact-Button" transform="translate(440, -18)">
+        <rect width="130" height="46" rx="12" fill="#BADFDB" />
+        <text class="text-btn" x="25" y="28" fill="#2F363F">Contact Me</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <g id="Hero-Section" transform="translate(120, 180)">
+    <g id="Hero-Text" transform="translate(0, 80)">
+      <g id="Tag">
+        <rect width="240" height="36" rx="18" fill="#FFF0F0" stroke="#FFBDBD" stroke-width="1" />
+        <text class="badge-text" x="16" y="22">✨ UI/UX Designer &amp; Dev</text>
+      </g>
+
+      <g id="Title" transform="translate(0, 70)">
+        <text class="text-title" font-size="60" y="0">Crafting digital</text>
+        <text class="text-title" font-size="60" y="75">experiences with a</text>
+        <text class="text-title" font-size="60" y="150">touch of </text>
+        <text class="text-title" font-size="60" y="150" x="250" fill="url(#grad-accent)">pastel magic.</text>
+      </g>
+
+      <text class="text-body" font-size="18" y="290" width="580">
+        <tspan x="0" dy="0">Hi, I'm Della. I design and build modern web applications that</tspan>
+        <tspan x="0" dy="28">combine pixel-perfect layouts with solid, functional code.</tspan>
+        <tspan x="0" dy="28">Let's make something amazing together!</tspan>
+      </text>
+
+      <g id="CTA-Buttons" transform="translate(0, 390)">
+        <g id="Btn-Primary">
+          <rect width="180" height="54" rx="16" fill="#FFA4A4" filter="url(#shadow-soft)" />
+          <text class="text-btn" x="35" y="32" fill="#FFFFFF">View My Work</text>
+        </g>
+        <g id="Btn-Secondary" transform="translate(200, 0)">
+          <rect width="150" height="54" rx="16" fill="#FFFFFF" stroke="#FFBDBD" stroke-width="1" />
+          <text class="text-btn" x="35" y="32" fill="#2F363F">Let's Chat</text>
+        </g>
+      </g>
+    </g>
+
+    <g id="Hero-Visual" transform="translate(680, 20)">
+      <circle cx="200" cy="200" r="170" stroke="#FFBDBD" stroke-width="2" stroke-dasharray="8 6" />
+      <circle cx="200" cy="200" r="160" fill="#FFFFFF" filter="url(#shadow-lg)" />
+      <circle cx="200" cy="200" r="150" fill="#BADFDB" />
+      <path d="M 120 300 Q 200 240 280 300 Z" fill="#FFA4A4" />
+      <circle cx="200" cy="160" r="50" fill="#FFBDBD" />
+      
+      <g id="Floating-Card-1" transform="translate(-40, 60)" filter="url(#shadow-soft)">
+        <rect width="160" height="66" rx="16" fill="#FFFFFF" fill-opacity="0.9" />
+        <rect x="12" y="15" width="36" height="36" rx="18" fill="#E5F5F3" />
+        <path d="M 24 33 L 30 27 L 36 33 M 24 29 L 36 29" stroke="#3D8F87" stroke-width="2" stroke-linecap="round" />
+        <text class="text-title" font-size="14" x="60" y="33">UI/UX Design</text>
+        <text class="text-body" font-size="10" x="60" y="48">Clean &amp; Functional</text>
+      </g>
+
+      <g id="Floating-Card-2" transform="translate(250, 260)" filter="url(#shadow-soft)">
+        <rect width="160" height="66" rx="16" fill="#FFFFFF" fill-opacity="0.9" />
+        <rect x="12" y="15" width="36" height="36" rx="18" fill="#FFEAEA" />
+        <path d="M 26 27 L 22 31 L 26 35 M 34 27 L 38 31 L 34 35" stroke="#C46060" stroke-width="2" stroke-linecap="round" />
+        <text class="text-title" font-size="14" x="60" y="33">Web Dev</text>
+        <text class="text-body" font-size="10" x="60" y="48">Fast &amp; Interactive</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <g id="About-Section" transform="translate(120, 820)">
+    <g id="About-Visual">
+      <rect width="400" height="420" rx="24" fill="#FFFFFF" filter="url(#shadow-soft)" />
+      <rect x="20" y="20" width="360" height="330" rx="16" fill="#FFF0F0" />
+      <circle cx="200" cy="185" r="80" fill="#BADFDB" />
+      
+      <g id="Badge-Years" transform="translate(280, 320)" filter="url(#shadow-lg)">
+        <rect width="140" height="84" rx="20" fill="#FFBDBD" stroke="#FFFFFF" stroke-width="4" />
+        <text class="text-title" font-size="32" x="70" y="44" text-anchor="middle">5+</text>
+        <text class="text-title" font-size="12" x="70" y="62" text-anchor="middle">Years Experience</text>
+      </g>
+    </g>
+
+    <g id="About-Content" transform="translate(480, 0)">
+      <g id="Section-Tag">
+        <rect width="100" height="30" rx="15" fill="#E5F5F3" stroke="#BADFDB" stroke-width="1" />
+        <text class="badge-text" x="18" y="19" fill="#3D8F87">About Me</text>
+      </g>
+      
+      <text class="text-title" font-size="36" y="70">Bringing ideas to life using design and code</text>
+      
+      <text class="text-body" font-size="16" y="130" width="600">
+        <tspan x="0" dy="0">I bridge the gap between creative visual designs and high-fidelity front-end</tspan>
+        <tspan x="0" dy="26">implementations. My philosophy centers on simplicity, usability, and joyful colors.</tspan>
+        <tspan x="0" dy="26">Whether establishing a cohesive brand identity or programming complex dashboard</tspan>
+        <tspan x="0" dy="26">features, I pay close attention to animations and micro-interactions that make</tspan>
+        <tspan x="0" dy="26">websites feel responsive and alive.</tspan>
+      </text>
+
+      <g id="Specialties-Grid" transform="translate(0, 290)">
+        <g id="Spec-1">
+          <circle cx="16" cy="16" r="16" fill="#E5F5F3" stroke="#BADFDB" stroke-width="1" />
+          <path d="M 11 16 L 14 19 L 21 12" stroke="#3D8F87" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          <text class="text-title" font-size="16" x="44" y="16">Interaction Design</text>
+          <text class="text-body" font-size="13" x="44" y="34">Creating seamless transitions</text>
+        </g>
+        <g id="Spec-2" transform="translate(300, 0)">
+          <circle cx="16" cy="16" r="16" fill="#E5F5F3" stroke="#BADFDB" stroke-width="1" />
+          <path d="M 11 16 L 14 19 L 21 12" stroke="#3D8F87" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          <text class="text-title" font-size="16" x="44" y="16">Frontend Architecture</text>
+          <text class="text-body" font-size="13" x="44" y="34">Clean, modular components</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <g id="Skills-Section" transform="translate(120, 1340)">
+    <g id="Skills-Header" transform="translate(480, 0)">
+      <g id="Sec-Tag" transform="translate(110, 0)">
+        <rect width="110" height="30" rx="15" fill="#E5F5F3" stroke="#BADFDB" stroke-width="1" />
+        <text class="badge-text" x="18" y="19" fill="#3D8F87">My Toolbox</text>
+      </g>
+      <text class="text-title" font-size="36" x="165" y="70" text-anchor="middle">Areas of Expertise</text>
+    </g>
+
+    <g id="Skills-Cards" transform="translate(0, 120)">
+      <!-- Card 1: Design -->
+      <g id="Skills-Col-1">
+        <rect width="360" height="280" rx="24" fill="#FFFFFF" stroke="#FFBDBD" stroke-opacity="0.3" stroke-width="1" filter="url(#shadow-soft)" />
+        <rect x="24" y="24" width="48" height="48" rx="12" fill="#BADFDB" />
+        <path d="M 40 40 L 52 40 M 40 46 L 50 46" stroke="#3D8F87" stroke-width="2" />
+        <text class="text-title" font-size="20" x="84" y="54">Creative &amp; UI/UX</text>
+        
+        <g id="Bars-1" transform="translate(24, 100)">
+          <text class="text-title" font-size="14" y="15">UI Design (Figma)</text>
+          <text class="text-title" font-size="14" x="312" y="15" text-anchor="end">95%</text>
+          <rect y="25" width="312" height="8" rx="4" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <rect y="25" width="296" height="8" rx="4" fill="#BADFDB" />
+
+          <text class="text-title" font-size="14" y="65">User Research</text>
+          <text class="text-title" font-size="14" x="312" y="65" text-anchor="end">90%</text>
+          <rect y="75" width="312" height="8" rx="4" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <rect y="75" width="280" height="8" rx="4" fill="#BADFDB" />
+        </g>
+      </g>
+
+      <!-- Card 2: Dev -->
+      <g id="Skills-Col-2" transform="translate(420, 0)">
+        <rect width="360" height="280" rx="24" fill="#FFFFFF" stroke="#FFBDBD" stroke-opacity="0.3" stroke-width="1" filter="url(#shadow-soft)" />
+        <rect x="24" y="24" width="48" height="48" rx="12" fill="#FFA4A4" />
+        <path d="M 40 48 L 36 44 L 40 40 M 56 48 L 60 44 L 56 40" stroke="#FFFFFF" stroke-width="2.5" />
+        <text class="text-title" font-size="20" x="84" y="54">Web Development</text>
+        
+        <g id="Bars-2" transform="translate(24, 100)">
+          <text class="text-title" font-size="14" y="15">HTML5 / CSS3</text>
+          <text class="text-title" font-size="14" x="312" y="15" text-anchor="end">95%</text>
+          <rect y="25" width="312" height="8" rx="4" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <rect y="25" width="296" height="8" rx="4" fill="#FFA4A4" />
+
+          <text class="text-title" font-size="14" y="65">JavaScript (ES6+)</text>
+          <text class="text-title" font-size="14" x="312" y="65" text-anchor="end">88%</text>
+          <rect y="75" width="312" height="8" rx="4" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <rect y="75" width="274" height="8" rx="4" fill="#FFA4A4" />
+        </g>
+      </g>
+
+      <!-- Card 3: Tools -->
+      <g id="Skills-Col-3" transform="translate(840, 0)">
+        <rect width="360" height="280" rx="24" fill="#FFFFFF" stroke="#FFBDBD" stroke-opacity="0.3" stroke-width="1" filter="url(#shadow-soft)" />
+        <rect x="24" y="24" width="48" height="48" rx="12" fill="#FFBDBD" />
+        <path d="M 42 42 L 54 54 M 42 54 L 54 42" stroke="#C46060" stroke-width="2.5" />
+        <text class="text-title" font-size="20" x="84" y="54">Workflow &amp; Tools</text>
+        
+        <g id="Bars-3" transform="translate(24, 100)">
+          <text class="text-title" font-size="14" y="15">Responsive Coding</text>
+          <text class="text-title" font-size="14" x="312" y="15" text-anchor="end">95%</text>
+          <rect y="25" width="312" height="8" rx="4" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <rect y="25" width="296" height="8" rx="4" fill="#FFBDBD" />
+
+          <text class="text-title" font-size="14" y="65">Git &amp; GitHub</text>
+          <text class="text-title" font-size="14" x="312" y="65" text-anchor="end">90%</text>
+          <rect y="75" width="312" height="8" rx="4" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <rect y="75" width="280" height="8" rx="4" fill="#FFBDBD" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== PORTFOLIO SECTION ==================== -->
+  <g id="Portfolio-Section" transform="translate(120, 1780)">
+    <g id="Portfolio-Header" transform="translate(480, 0)">
+      <g id="Sec-Tag" transform="translate(110, 0)">
+        <rect width="90" height="30" rx="15" fill="#E5F5F3" stroke="#BADFDB" stroke-width="1" />
+        <text class="badge-text" x="18" y="19" fill="#3D8F87">My Work</text>
+      </g>
+      <text class="text-title" font-size="36" x="155" y="70" text-anchor="middle">Recent Creations</text>
+    </g>
+
+    <!-- Filters -->
+    <g id="Filters" transform="translate(340, 100)">
+      <g id="Filter-All">
+        <rect width="110" height="42" rx="21" fill="#FFFFFF" stroke="#FFBDBD" />
+        <text class="text-btn" x="55" y="26" fill="#2F363F" text-anchor="middle">All Project</text>
+      </g>
+      <g id="Filter-Web" transform="translate(130, 0)">
+        <rect width="110" height="42" rx="21" fill="#FFA4A4" />
+        <text class="text-btn" x="55" y="26" fill="#FFFFFF" text-anchor="middle">Web App</text>
+      </g>
+      <g id="Filter-Design" transform="translate(260, 0)">
+        <rect width="130" height="42" rx="21" fill="#FFFFFF" stroke="#FFBDBD" />
+        <text class="text-btn" x="65" y="26" fill="#2F363F" text-anchor="middle">UI/UX Design</text>
+      </g>
+    </g>
+
+    <!-- Project Cards Grid -->
+    <g id="Project-Grid" transform="translate(0, 180)">
+      <!-- Card 1 -->
+      <g id="Project-Card-1">
+        <rect width="380" height="360" rx="24" fill="#FFFFFF" filter="url(#shadow-soft)" />
+        <rect x="20" y="20" width="340" height="200" rx="16" fill="#FFF0F0" />
+        <path d="M 40 180 Q 120 100 200 150 T 340 90" stroke="#FFA4A4" stroke-width="4" fill="none" />
+        <text class="text-body" font-size="12" x="20" y="255">WEB APP</text>
+        <text class="text-title" font-size="20" x="20" y="285">Midnight Roast Manager</text>
+        <g id="Tags-1" transform="translate(20, 310)">
+          <rect width="80" height="26" rx="6" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <text class="text-body" font-size="11" x="12" y="17">HTML/CSS</text>
+          
+          <rect x="90" width="85" height="26" rx="6" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <text class="text-body" font-size="11" x="102" y="17">JavaScript</text>
+        </g>
+      </g>
+
+      <!-- Card 2 -->
+      <g id="Project-Card-2" transform="translate(420, 0)">
+        <rect width="380" height="360" rx="24" fill="#FFFFFF" filter="url(#shadow-soft)" />
+        <rect x="20" y="20" width="340" height="200" rx="16" fill="#E5F5F3" />
+        <circle cx="190" cy="120" r="45" fill="#BADFDB" />
+        <text class="text-body" font-size="12" x="20" y="255">BRANDING</text>
+        <text class="text-title" font-size="20" x="20" y="285">Caffeine &amp; Co Identity</text>
+        <g id="Tags-2" transform="translate(20, 310)">
+          <rect width="90" height="26" rx="6" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <text class="text-body" font-size="11" x="14" y="17">Logo Design</text>
+          <rect x="100" width="90" height="26" rx="6" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <text class="text-body" font-size="11" x="114" y="17">Color System</text>
+        </g>
+      </g>
+
+      <!-- Card 3 -->
+      <g id="Project-Card-3" transform="translate(840, 0)">
+        <rect width="380" height="360" rx="24" fill="#FFFFFF" filter="url(#shadow-soft)" />
+        <rect x="20" y="20" width="340" height="200" rx="16" fill="#FFF0F0" />
+        <rect x="150" y="50" width="80" height="140" rx="12" fill="#FFBDBD" />
+        <text class="text-body" font-size="12" x="20" y="255">UI/UX DESIGN</text>
+        <text class="text-title" font-size="20" x="20" y="285">Blush &amp; Bloom App</text>
+        <g id="Tags-3" transform="translate(20, 310)">
+          <rect width="105" height="26" rx="6" fill="#FCF9EA" stroke="#FFBDBD" stroke-opacity="0.3" />
+          <text class="text-body" font-size="11" x="12" y="17">Figma Prototype</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <g id="Experience-Section" transform="translate(120, 2460)">
+    <g id="Experience-Header" transform="translate(480, 0)">
+      <g id="Sec-Tag" transform="translate(110, 0)">
+        <rect width="110" height="30" rx="15" fill="#E5F5F3" stroke="#BADFDB" stroke-width="1" />
+        <text class="badge-text" x="18" y="19" fill="#3D8F87">Career Path</text>
+      </g>
+      <text class="text-title" font-size="36" x="165" y="70" text-anchor="middle">Professional Timeline</text>
+    </g>
+
+    <!-- Timeline Layout -->
+    <g id="Timeline-Layout" transform="translate(0, 130)">
+      <!-- Central Line -->
+      <line x1="600" y1="20" x2="600" y2="480" stroke="#FFBDBD" stroke-width="4" stroke-dasharray="8 6" />
+
+      <!-- Timeline Item 1 (Left) -->
+      <g id="Timeline-Item-1" transform="translate(0, 20)">
+        <circle cx="600" cy="40" r="10" fill="#FFA4A4" stroke="#FFFFFF" stroke-width="4" />
+        <rect x="120" y="0" width="440" height="130" rx="20" fill="#FFFFFF" filter="url(#shadow-soft)" />
+        <text class="text-title" font-size="14" x="144" y="30" fill="#FFA4A4">2024 - Present</text>
+        <text class="text-title" font-size="18" x="144" y="58">Lead Frontend Developer</text>
+        <text class="text-title" font-size="13" x="144" y="78" fill="#3D8F87">Caffeine &amp; Co Labs</text>
+        <text class="text-body" font-size="12" x="144" y="102">Responsible for complex order dashboards and rendering speed optimization.</text>
+      </g>
+
+      <!-- Timeline Item 2 (Right) -->
+      <g id="Timeline-Item-2" transform="translate(480, 180)">
+        <circle cx="120" cy="40" r="10" fill="#BADFDB" stroke="#FFFFFF" stroke-width="4" />
+        <rect x="160" y="0" width="440" height="130" rx="20" fill="#FFFFFF" filter="url(#shadow-soft)" />
+        <text class="text-title" font-size="14" x="184" y="30" fill="#3D8F87">2022 - 2024</text>
+        <text class="text-title" font-size="18" x="184" y="58">UI/UX &amp; Web Designer</text>
+        <text class="text-title" font-size="13" x="184" y="78" fill="#FFA4A4">Blush &amp; Bloom Digital Agency</text>
+        <text class="text-body" font-size="12" x="184" y="102">Designed client experiences in Figma and coded animated landing pages.</text>
+      </g>
+
+      <!-- Timeline Item 3 (Left) -->
+      <g id="Timeline-Item-3" transform="translate(0, 340)">
+        <circle cx="600" cy="40" r="10" fill="#FFBDBD" stroke="#FFFFFF" stroke-width="4" />
+        <rect x="120" y="0" width="440" height="130" rx="20" fill="#FFFFFF" filter="url(#shadow-soft)" />
+        <text class="text-title" font-size="14" x="144" y="30" fill="#C46060">2020 - 2022</text>
+        <text class="text-title" font-size="18" x="144" y="58">Junior Web Developer</text>
+        <text class="text-title" font-size="13" x="144" y="78" fill="#3D8F87">BPSK Sumedang Tech Group</text>
+        <text class="text-body" font-size="12" x="144" y="102">Programmed administrative database dashboards and consumer complaints workflows.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <g id="Contact-Section" transform="translate(120, 3140)">
+    <!-- Info Column -->
+    <g id="Contact-Info" transform="translate(0, 40)">
+      <g id="Sec-Tag">
+        <rect width="105" height="30" rx="15" fill="#E5F5F3" stroke="#BADFDB" stroke-width="1" />
+        <text class="badge-text" x="18" y="19" fill="#3D8F87">Get In Touch</text>
+      </g>
+      
+      <text class="text-title" font-size="36" y="70" width="450">
+        <tspan x="0" dy="0">Let's build something</tspan>
+        <tspan x="0" dy="48">beautiful together!</tspan>
+      </text>
+      
+      <text class="text-body" font-size="15" y="180" width="450">
+        <tspan x="0" dy="0">Have a project idea, want to collaborate,</tspan>
+        <tspan x="0" dy="24">or just want to say hello? Fill out the form or</tspan>
+        <tspan x="0" dy="24">drop me an email. I'd love to hear from you!</tspan>
+      </text>
+
+      <!-- Contact Info Cards -->
+      <g id="Info-Cards" transform="translate(0, 270)">
+        <!-- Email -->
+        <g id="Email-Card">
+          <rect width="400" height="76" rx="16" fill="#FFFFFF" stroke="#FFBDBD" stroke-opacity="0.3" filter="url(#shadow-soft)" />
+          <rect x="16" y="16" width="44" height="44" rx="12" fill="#E5F5F3" />
+          <path d="M 28 32 C 28 32 30 35 38 35 C 46 35 48 32 48 32 M 28 35 L 38 42 L 48 35" stroke="#3D8F87" stroke-width="2" stroke-linecap="round" />
+          <text class="text-title" font-size="14" x="76" y="34">Email Address</text>
+          <text class="text-body" font-size="13" x="76" y="52">hello@dellakartika.dev</text>
+        </g>
+        
+        <!-- Location -->
+        <g id="Location-Card" transform="translate(0, 96)">
+          <rect width="400" height="76" rx="16" fill="#FFFFFF" stroke="#FFBDBD" stroke-opacity="0.3" filter="url(#shadow-soft)" />
+          <rect x="16" y="16" width="44" height="44" rx="12" fill="#FFEAEA" />
+          <path d="M 38 24 A 6 6 0 0 0 32 30 C 32 35 38 44 38 44 C 38 44 44 35 44 30 A 6 6 0 0 0 38 24 Z M 38 32 A 2 2 0 1 1 38 28 A 2 2 0 0 1 38 32 Z" stroke="#FFA4A4" stroke-width="2" stroke-linecap="round" />
+          <text class="text-title" font-size="14" x="76" y="34">Based In</text>
+          <text class="text-body" font-size="13" x="76" y="52">Jakarta, Indonesia</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Form Column -->
+    <g id="Contact-Form" transform="translate(560, 40)" filter="url(#shadow-lg)">
+      <rect width="640" height="420" rx="28" fill="#FFFFFF" />
+      
+      <!-- Inputs Grid -->
+      <g id="Form-Inputs" transform="translate(40, 40)">
+        <!-- Name -->
+        <g id="Input-Name">
+          <text class="form-label" y="15">Your Name</text>
+          <rect y="25" width="260" height="48" rx="12" fill="#FCF9EA" fill-opacity="0.5" stroke="#FFBDBD" stroke-width="1" />
+          <text class="text-body" font-size="14" x="16" y="54">John Doe</text>
+        </g>
+
+        <!-- Email -->
+        <g id="Input-Email" transform="translate(300, 0)">
+          <text class="form-label" y="15">Your Email</text>
+          <rect y="25" width="260" height="48" rx="12" fill="#FCF9EA" fill-opacity="0.5" stroke="#FFBDBD" stroke-width="1" />
+          <text class="text-body" font-size="14" x="16" y="54">john@example.com</text>
+        </g>
+
+        <!-- Subject -->
+        <g id="Input-Subject" transform="translate(0, 96)">
+          <text class="form-label" y="15">Subject</text>
+          <rect y="25" width="560" height="48" rx="12" fill="#FCF9EA" fill-opacity="0.5" stroke="#FFBDBD" stroke-width="1" />
+          <text class="text-body" font-size="14" x="16" y="54">Project collaboration...</text>
+        </g>
+
+        <!-- Message -->
+        <g id="Input-Message" transform="translate(0, 192)">
+          <text class="form-label" y="15">Message</text>
+          <rect y="25" width="560" height="100" rx="12" fill="#FCF9EA" fill-opacity="0.5" stroke="#FFBDBD" stroke-width="1" />
+          <text class="text-body" font-size="14" x="16" y="54">Tell me more about your project goals...</text>
+        </g>
+        
+        <!-- Submit Button -->
+        <g id="Btn-Submit" transform="translate(0, 316)">
+          <rect width="560" height="48" rx="12" fill="#FFA4A4" />
+          <text class="text-btn" x="280" y="28" fill="#FFFFFF" text-anchor="middle">Send Message</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== FOOTER SECTION ==================== -->
+  <g id="Footer" transform="translate(0, 3680)">
+    <line x1="0" y1="0" x2="1440" y2="0" stroke="#FFBDBD" stroke-opacity="0.2" />
+    <rect y="1" width="1440" height="120" fill="#FCF9EA" />
+    
+    <g id="Footer-Content" transform="translate(120, 50)">
+      <text class="text-body" font-size="14" y="20">© 2026 Della Kartika. Made with 💖 and Pastel colors.</text>
+      
+      <!-- Socials -->
+      <g id="Socials" transform="translate(1080, 0)">
+        <!-- Git -->
+        <g id="Soc-Git">
+          <circle cx="16" cy="16" r="16" fill="#FFFFFF" stroke="#FFBDBD" stroke-width="1" />
+          <path d="M16 10 C14 10 12 11 12 13 C12 15 14 16 16 16 C17 16 18 15 18 15" stroke="#2F363F" stroke-width="2" stroke-linecap="round" />
+        </g>
+        <!-- Dribbble -->
+        <g id="Soc-Dribbble" transform="translate(44, 0)">
+          <circle cx="16" cy="16" r="16" fill="#FFFFFF" stroke="#FFBDBD" stroke-width="1" />
+          <circle cx="16" cy="16" r="8" stroke="#2F363F" stroke-width="1.5" />
+        </g>
+        <!-- LinkedIn -->
+        <g id="Soc-LinkedIn" transform="translate(88, 0)">
+          <circle cx="16" cy="16" r="16" fill="#FFFFFF" stroke="#FFBDBD" stroke-width="1" />
+          <text font-family="'Inter', sans-serif" font-weight="bold" font-size="12" x="12" y="20" fill="#2F363F">in</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
